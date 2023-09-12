@@ -1,21 +1,17 @@
-import logo from './logo.svg';
+import React from "react"; 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
+import SignupPage from './pages/SignupPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      Casa Quest Hub
-      </header>
-      
-      <main>
-
-      </main>
-
-      <footer>
-        All rights reserved.
-      </footer>
-    </div>
+    <>
+    <Router>
+      <Routes>
+        <Route path="/signup" component={SignupPage} />
+      </Routes>
+    </Router>
+    </>
   );
 }
 
