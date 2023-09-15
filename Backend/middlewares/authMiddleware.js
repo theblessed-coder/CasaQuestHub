@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const config = require('../config/config');
+const config = require('../config/jwt');
 
 exports.verifyToken = (req, res, next) => {
   // 1. Extract the token from the request header

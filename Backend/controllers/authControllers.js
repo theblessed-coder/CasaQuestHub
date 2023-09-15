@@ -1,6 +1,7 @@
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const { users } = require('../models/user'); // Replace with your actual User model
+require('../models/property'); // Replace with your actual User model
 
 // Signup
 exports.signup = (req, res) => {
