@@ -25,7 +25,7 @@ const SignupPage = () => {
               name="firstName"
               value={formData.firstName}
               onChange={handleChange}
-              className="w-full p-2 border border-gray-300 rounded"
+              className="w-full p-2 border border-gray-300 rounded outline-amber-300"
               required
             />
           </div>
@@ -37,7 +37,7 @@ const SignupPage = () => {
               name="lastName"
               value={formData.lastName}
               onChange={handleChange}
-              className="w-full p-2 border border-gray-300 rounded"
+              className="w-full p-2 border border-gray-300 rounded  outline-amber-300"
               required
             />
           </div>
@@ -49,7 +49,7 @@ const SignupPage = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full p-2 border border-gray-300 rounded"
+              className="w-full p-2 border border-gray-300 rounded outline-amber-300"
               required
             />
           </div>
@@ -61,7 +61,7 @@ const SignupPage = () => {
               name="password"
               value={formData.password}
               onChange={handleChange}
-              className="w-full p-2 border border-gray-300 rounded"
+              className="w-full p-2 border border-gray-300 rounded  outline-amber-300"
               required
             />
           </div>
@@ -71,7 +71,7 @@ const SignupPage = () => {
           </p>
           <button
             type="submit"
-            className="bg-yellow-500 hover:bg-slate-500 hover:text-yellow-50 text-black font-semibold w-full p-2 rounded"
+            className="bg-yellow-500 hover:bg-slate-500 hover:text-yellow-50 text-black font-semibold w-full p-2 rounded transition duration-500 ease-in-out"
           >
             REGISTER NOW
           </button>
