@@ -21,7 +21,7 @@ const SignupPage = () => {
 
   return (
     <div className="max-w-lg mx-auto my-5 bg-white rounded p-8 shadow-lg flex flex-col">
-      <>
+    
         <form
           className="transition duration-1000 ease-in-out"
           onSubmit={handleSubmit}
@@ -85,9 +85,7 @@ const SignupPage = () => {
           </button>
           <p className="text-right pt-2">Already have an account? </p>
         </form>
-      </>
-      {/*
-      <footer className="bg">&copy; 2023 CasaQuestHub</footer> */}
+      
     </div>
   );
 };
