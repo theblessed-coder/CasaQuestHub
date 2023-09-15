@@ -1,7 +1,7 @@
 // authController.js
 const User = require('../models/User');
 const jwt = require('jsonwebtoken');
-const config = require('../config/config');
+const config = require('../config/database');
 
 // Registration
 exports.register = async (req, res) => {

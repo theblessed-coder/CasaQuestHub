@@ -1,10 +1,12 @@
 // app.js
 const express = require('express');
 const mongoose = require('mongoose');
-const config = require('./config/config');
+const bodyParser = require('body-parser');
+const config = require('./config/database');
 const authRoutes = require('./routes/authRoutes');
 const propertyRoutes = require('./routes/propertyRoutes');
 
+app.use(bodyParser.json());
 const app = express();
 
 // Connect to MongoDB
