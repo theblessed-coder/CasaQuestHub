@@ -16,10 +16,10 @@ const SignupPage = () => {
 
 
     return (
-      <div>
-        <h2>Sign Up</h2>
+      <div className="max-w-md mx-auto bg-white rounded p-8 shadow-lg">
+        <h2 className="text-xl font-bold mb-6">Sign Up</h2>
         <form onSubmit={handleSubmit}>
-          <div>
+          <div className="mb-4">
             <label>First Name:</label>
             <input
               type="text"
@@ -69,28 +69,6 @@ const SignupPage = () => {
           <button type="submit">REGISTER NOW</button>
           <p>Already have an account? </p>
         </form>
-
-        <footer>
-          <div>
-            <ul>
-              <li>
-                <h2>Quick Links</h2>
-              </li>
-              <li>Home</li>
-              <li>About Us</li>
-              <li>Contact</li>
-            </ul>
-          </div>
-
-          <div>
-            <ul>
-              <li>Follow Us</li>
-            </ul>
-          </div>
-
-          <hr></hr>
-          <p>CasaQuestHub &copy; 2023. All rights reserved</p>
-        </footer>
       </div>
     );
 };
