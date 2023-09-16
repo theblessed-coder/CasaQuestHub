@@ -11,8 +11,8 @@ function App() {
         <Routes>
           <Route path="/signup" component={Signup} />
         </Routes>
-        <Footer />
       </Router>
+      <Footer />
     </>
   );
 }

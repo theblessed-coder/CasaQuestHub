@@ -1,5 +1,5 @@
 import { useState } from "react";
-import footer from "../components/Footer";
+import Footer from "../components/Footer";
 
 const Signup = () => {
   const [formData, setFormData] = useState({
@@ -86,6 +86,7 @@ const Signup = () => {
           </button>
           <p className="text-right pt-2">Already have an account? </p>
         </form>
+        <footer />
     </div>
   );
 };
