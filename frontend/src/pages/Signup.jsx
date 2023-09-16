@@ -1,6 +1,7 @@
 import { useState } from "react";
+import footer from "../components/Footer";
 
-const SignupPage = () => {
+const Signup = () => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -85,9 +86,8 @@ const SignupPage = () => {
           </button>
           <p className="text-right pt-2">Already have an account? </p>
         </form>
-      
     </div>
   );
 };
 
-export default SignupPage;
+export default Signup;
