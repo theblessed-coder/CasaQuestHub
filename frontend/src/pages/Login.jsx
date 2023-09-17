@@ -18,11 +18,8 @@ const Login = () => {
   };
 
   return (
-    <div className="max-w-lg mx-auto my-5 bg-white rounded p-8 shadow-lg flex flex-col">
-      <form
-        className="transition duration-1000 ease-in-out"
-        onSubmit={handleSubmit}
-      >
+    <div className="max-w-lg mx-auto my-20 bg-white rounded p-8 shadow-lg flex flex-col">
+      <form onSubmit={handleSubmit}>
 
         <div className="mb-4">
           <label className="block font-semibold mb-2">Email</label>
