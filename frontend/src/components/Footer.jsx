@@ -1,4 +1,7 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram, faXTwitter, faFacebookF } from "@fortawesome/free-brands-svg-icons";
+
 
 function Footer() {
   return (
@@ -28,23 +31,23 @@ function Footer() {
               <a
                 href="https://www.instagram.com/"
                 target="_blank"
-                className="text-white hover:text-yellow-500"
+                className="text-white hover:text-yellow-500 p-2"
               >
-                <i class="fa-brands fa-instagram fa-xl"></i>
+                <FontAwesomeIcon icon={faInstagram} size="xl" />
               </a>
               <a
                 href="https://twitter.com/"
                 target="_blank"
-                className="text-white hover:text-yellow-500"
+                className="text-white hover:text-yellow-500 p-2"
               >
-                Twitter
+                <FontAwesomeIcon icon={faXTwitter} size="xl" />
               </a>
               <a
                 href="https://www.facebook.com/"
                 target="_blank"
-                className="text-white hover:text-yellow-500"
+                className="text-white hover:text-yellow-500 p-2"
               >
-                Facebook
+                <FontAwesomeIcon icon={faFacebookF} size="xl" />
               </a>
             </div>
           </div>
