@@ -50,7 +50,7 @@ function Footer() {
           </div>
         </div>
         <hr />
-        <p className="pt-3">CasaQuestHub &copy; 2023. All rights reserved.</p>
+        <p className="pt-3">CasaQuestHub &copy; 2023. All rights reserved</p>
       </footer>
     </div>
   );
