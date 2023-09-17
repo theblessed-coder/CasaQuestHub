@@ -83,7 +83,7 @@ const Signup = () => {
           >
             REGISTER NOW
           </button>
-          <p className="text-right pt-2">Already have an account? </p>
+          <p className="text-right pt-2">Already have an account? <a href="/login"> LOGIN</a></p>
         </form>
 
     </div>
