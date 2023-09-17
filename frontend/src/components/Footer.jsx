@@ -30,7 +30,7 @@ function Footer() {
                 target="_blank"
                 className="text-white hover:text-yellow-500"
               >
-                Instagram
+                <i class="fa-brands fa-instagram fa-xl"></i>
               </a>
               <a
                 href="https://twitter.com/"
