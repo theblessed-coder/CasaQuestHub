@@ -5,7 +5,11 @@ const Header = () => {
     <header className="bg-black text-white p-4 flex justify-between items-center">
       {/* (Logo and Brand Name) */}
       <div className="flex items-center">
-        <img src="/path/to/logo.png" alt="Logo" className="h-8 mr-2" />
+        <img
+          src="frontend\src\images\logo.png"
+          alt="CasaQuestHub Logo"
+          className="h-8 mr-2"
+        />
         <span className="text-xl font-bold">CasaQuestHub</span>
       </div>
 
