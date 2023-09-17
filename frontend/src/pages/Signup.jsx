@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Footer from "../components/Footer";
 
 const Signup = () => {
   const [formData, setFormData] = useState({
@@ -22,7 +21,7 @@ const Signup = () => {
 
   return (
     <div className="max-w-lg mx-auto my-5 bg-white rounded p-8 shadow-lg flex flex-col">
-    
+   
         <form
           className="transition duration-1000 ease-in-out"
           onSubmit={handleSubmit}
@@ -86,7 +85,7 @@ const Signup = () => {
           </button>
           <p className="text-right pt-2">Already have an account? </p>
         </form>
-        <footer />
+
     </div>
   );
 };
