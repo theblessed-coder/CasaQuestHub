@@ -107,28 +107,41 @@ const Land = () => {
   );
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      {filteredListings.map((listing) => (
-        <div key={listing.id}>
-          <img
-            src={listing.imageUrl}
-            alt={listing.title}
-            className="w-full h-48 object-cover mb-4"
-          />
-          <h2 className="text-xl font-bold mb-2">{listing.title}</h2>
-          <p className="text-gray-700 mb-2">{listing.location}</p>
-          <p className="text-green-600 font-semibold mb-2">{listing.price}</p>
-          <p className="text-gray-800">{listing.description}</p>
-          <div className="mt-4">
-            <button className="bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-700 mr-2">
-              View Details
-            </button>
-            <button className="bg-green-500 text-white font-semibold py-2 px-4 rounded hover:bg-green-700">
-              Checkout
-            </button>
+    <div className="container mx-auto p-8">
+      <h1 className="text-2xl font-bold mb-4">Residential Listings</h1>
+      <div className="flex justify-end mb-4">
+        <input
+          className="p-2 border border-gray-300 rounded focus:outline-yellow-500"
+          type="text"
+          placeholder="Search..."
+          value={searchQuery}
+          onChange={handleInputChange}
+        />
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {filteredListings.map((listing) => (
+          <div key={listing.id}>
+            <img
+              src={listing.imageUrl}
+              alt={listing.title}
+              className="w-full h-48 object-cover mb-4"
+            />
+            <h2 className="text-xl font-bold mb-2">{listing.title}</h2>
+            <p className="text-gray-700 mb-2">{listing.location}</p>
+            <p className="text-green-600 font-semibold mb-2">{listing.price}</p>
+            <p className="text-gray-800">{listing.description}</p>
+            <div className="mt-4">
+              <button className="bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-700 mr-2">
+                View Details
+              </button>
+              <button className="bg-green-500 text-white font-semibold py-2 px-4 rounded hover:bg-green-700">
+                Checkout
+              </button>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
