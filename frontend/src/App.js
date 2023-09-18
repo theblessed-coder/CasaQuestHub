@@ -10,6 +10,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Residential from "./pages/Residential";
 import Commercial from "./pages/Commercial";
+import Land from "./pages/Land";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/residential" element={<Residential />} />
           <Route path="/commercial" element={<Commercial />} />
+          <Route path="/land" element={<Land />} />
         </Routes>
         <Footer />
       </Router>
