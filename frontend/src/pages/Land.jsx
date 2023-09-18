@@ -98,9 +98,16 @@ const Land = () => {
          imageUrl: "",
        },
      ];
+
+     const filteredListings = landListings.filter(
+       (listing) =>
+         listing.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+         listing.location.toLowerCase().includes(searchQuery.toLowerCase()) ||
+         listing.price.toLowerCase().includes(searchQuery.toLowerCase())
+     );
     
   return (
-    <div>Land</div>
+    
   )
 }
 
