@@ -14,7 +14,7 @@ const Land = () => {
       location: "",
       price: "",
       description: "",
-      imageUrl: "",
+      imageUrl: "./images/land-01.jpg",
     },
 
     {
@@ -23,7 +23,7 @@ const Land = () => {
       location: "",
       price: "",
       description: "",
-      imageUrl: "",
+      imageUrl: "./images/land-02.jpg",
     },
 
     {
@@ -32,7 +32,7 @@ const Land = () => {
       location: "",
       price: "",
       description: "",
-      imageUrl: "",
+      imageUrl: "./images/land-03.jpg",
     },
 
     {
@@ -41,7 +41,7 @@ const Land = () => {
       location: "",
       price: "",
       description: "",
-      imageUrl: "",
+      imageUrl: "./images/land-04.jpg",
     },
 
     {
@@ -50,7 +50,7 @@ const Land = () => {
       location: "",
       price: "",
       description: "",
-      imageUrl: "",
+      imageUrl: "./images/land-05.jpg",
     },
 
     {
@@ -59,7 +59,7 @@ const Land = () => {
       location: "",
       price: "",
       description: "",
-      imageUrl: "",
+      imageUrl: "./images/land-01.jpg",
     },
 
     {
@@ -68,7 +68,7 @@ const Land = () => {
       location: "",
       price: "",
       description: "",
-      imageUrl: "",
+      imageUrl: "./images/land-02.jpg",
     },
 
     {
@@ -77,7 +77,7 @@ const Land = () => {
       location: "",
       price: "",
       description: "",
-      imageUrl: "",
+      imageUrl: "./images/land-03.jpg",
     },
 
     {
@@ -86,7 +86,7 @@ const Land = () => {
       location: "",
       price: "",
       description: "",
-      imageUrl: "",
+      imageUrl: "./images/land-04.jpg",
     },
 
     {
@@ -95,7 +95,7 @@ const Land = () => {
       location: "",
       price: "",
       description: "",
-      imageUrl: "",
+      imageUrl: "./images/land-05.jpg",
     },
   ];
 
