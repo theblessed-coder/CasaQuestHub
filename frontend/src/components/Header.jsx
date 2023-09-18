@@ -38,7 +38,7 @@ const Dropdown = () => {
 
 const Header = () => {
   return (
-    <header className="bg-black text-white p-4 flex justify-between items-center">
+    <header className="sticky top-0 bg-black text-white p-4 flex justify-between items-center">
       {/* (Logo and Brand Name) */}
       <div className="flex items-center">
         <img
