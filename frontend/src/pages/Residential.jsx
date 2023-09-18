@@ -14,7 +14,7 @@ const Residential = () => {
       location: "Victoria Island, Lagos",
       price: "$300,000",
       description: "A spacious family home with a large backyard and modern amenities.",
-      imageUrl: "./images/residential-01.png",
+      imageUrl: "./images/residential-01.jpg",
     },
 
     {
@@ -23,7 +23,7 @@ const Residential = () => {
       location: "Ada george, Rivers",
       price: "$200,000",
       description: "A charming townhouse with easy access to local amenities.",
-      imageUrl: "./images/residential-02.png",
+      imageUrl: "./images/residential-02.jpg",
     },
 
     {
@@ -32,7 +32,7 @@ const Residential = () => {
       location: "Ada george, Rivers",
       price: "$200,000",
       description: "A charming townhouse with easy access to local amenities.",
-      imageUrl: "./images/residential-02.png",
+      imageUrl: "./images/residential-03.jpg",
     },
 
     {
@@ -41,7 +41,7 @@ const Residential = () => {
       location: "Ada george, Rivers",
       price: "$200,000",
       description: "A charming townhouse with easy access to local amenities.",
-      imageUrl: "./images/residential-02.png",
+      imageUrl: "./images/residential-04.jpg",
     },
 
     {
@@ -50,7 +50,7 @@ const Residential = () => {
       location: "Ada george, Rivers",
       price: "$200,000",
       description: "A charming townhouse with easy access to local amenities.",
-      imageUrl: "./images/residential-02.png",
+      imageUrl: "./images/residential-05.jpg",
     },
 
     {
@@ -59,7 +59,7 @@ const Residential = () => {
       location: "Ada george, Rivers",
       price: "$200,000",
       description: "A charming townhouse with easy access to local amenities.",
-      imageUrl: "./images/residential-02.png",
+      imageUrl: "./images/residential-06.jpg",
     },
 
     {
@@ -68,7 +68,7 @@ const Residential = () => {
       location: "Ada george, Rivers",
       price: "$200,000",
       description: "A charming townhouse with easy access to local amenities.",
-      imageUrl: "./images/residential-02.png",
+      imageUrl: "./images/residential-07.jpg",
     },
 
     {
@@ -77,7 +77,7 @@ const Residential = () => {
       location: "Ada george, Rivers",
       price: "$200,000",
       description: "A charming townhouse with easy access to local amenities.",
-      imageUrl: "./images/residential-02.png",
+      imageUrl: "./images/residential-08.jpg",
     },
 
     {
@@ -86,7 +86,7 @@ const Residential = () => {
       location: "Ada george, Rivers",
       price: "$200,000",
       description: "A charming townhouse with easy access to local amenities.",
-      imageUrl: "./images/residential-02.png",
+      imageUrl: "./images/residential-01.jpg",
     },
   ];
 
