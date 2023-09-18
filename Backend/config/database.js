@@ -1,8 +1,33 @@
-// database.js
-module.exports = {
-    db: {
-      url: "mongodb://localhost/your-database-name",
-    },
-    secretKey: "your-secret-key-for-jwt",
-  };
-  
+const mongoose = require('mongoose');
+
+// Definining  the MongoDB connection URI with actual database URI.
+const mongoURI = 'mongodb+srv://casaquesthub:<TezfZk4KnWLg8NTt>@cluster0.vuuymch.mongodb.net/?retryWrites=true&w=majority';
+
+// Connect to the MongoDB database
+mongoose.connect(mongoURI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
+  useFindAndModify: false,
+});
+
+// Get the default connection
+const db = mongoose.connection;
+
+// Handle MongoDB connection events
+db.on('connected', () => {
+  console.log(`Connected to MongoDB at ${mongoURI}`);
+});
+
+db.on('error', (err) => {
+  console.error(`MongoDB connection error: ${err}`);
+});
+
+db.on('disconnected', () => {
+  console.log('Disconnected from MongoDB');
+});
+
+// Exporting  mongoose instance to use in other parts of the application
+module.exports = mongoose;
+
+ 
