@@ -13,8 +13,7 @@ const Residential = () => {
       title: "Beautiful Family Home",
       location: "Victoria Island, Lagos",
       price: "$300,000",
-      description:
-        "A spacious family home with a large backyard and modern amenities.",
+      description: "A spacious family home with a large backyard and modern amenities.",
       imageUrl: "./images/residential-01.png",
     },
 
@@ -103,7 +102,7 @@ const Residential = () => {
       <h1 className="text-2xl font-bold mb-4">Residential Listings</h1>
       <div className="flex justify-end mb-4">
         <input
-          className="p-2 border border-gray-300 rounded outline-amber-300"
+          className="p-2 border border-gray-300 rounded focus:outline-yellow-500"
           type="text"
           placeholder="Search..."
           value={searchQuery}
@@ -111,8 +110,8 @@ const Residential = () => {
         />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {residentialListings.map((listing) => (
+       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {filteredListings.map((listing) => (
           <div key={listing.id}>
             <img
               src={listing.imageUrl}
