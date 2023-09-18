@@ -19,7 +19,7 @@ const Dropdown = () => {
         Listings <FontAwesomeIcon icon={faCaretDown} />
       </div>
       {isOpen && (
-        <ul className="dropdown-menu absolute mt-2 bg-white text-gray-800 p-5 space-y-2">
+        <ul className="dropdown-menu absolute mt-5 bg-slate-500 text-white p-5 space-y-5">
           <li>
             <Link to="/residential">Residential</Link>
           </li>
