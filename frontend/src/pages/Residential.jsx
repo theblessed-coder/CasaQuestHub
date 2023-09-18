@@ -1,92 +1,116 @@
-import React from 'react'
+import React, { useState } from "react";
 
 const Residential = () => {
-    const residentialListings = [
-      {
-        id: 1,
-        title: "Beautiful Family Home",
-        location: "Victoria Island, Lagos",
-        price: "$300,000",
-        description: "A spacious family home with a large backyard and modern amenities.",
-        imageUrl: "./images/residential-01.png",
-      },
+  const [searchQuery, setSearchQuery] = useState("");
 
-      {
-        id: 2,
-        title: "Cozy Townhouse",
-        location: "Ada george, Rivers",
-        price: "$200,000",
-        description: "A charming townhouse with easy access to local amenities.",
-        imageUrl: "./images/residential-02.png",
-      },
+  const handleInputChange = (e) => {
+    setSearchQuery(e.target.value);
+  };
 
-      {
-        id: 3,
-        title: "Cozy Townhouse",
-        location: "Ada george, Rivers",
-        price: "$200,000",
-        description: "A charming townhouse with easy access to local amenities.",
-        imageUrl: "./images/residential-02.png",
-      },
+  const residentialListings = [
+    {
+      id: 1,
+      title: "Beautiful Family Home",
+      location: "Victoria Island, Lagos",
+      price: "$300,000",
+      description:
+        "A spacious family home with a large backyard and modern amenities.",
+      imageUrl: "./images/residential-01.png",
+    },
 
-      {
-        id: 4,
-        title: "Cozy Townhouse",
-        location: "Ada george, Rivers",
-        price: "$200,000",
-        description: "A charming townhouse with easy access to local amenities.",
-        imageUrl: "./images/residential-02.png",
-      },
+    {
+      id: 2,
+      title: "Cozy Townhouse",
+      location: "Ada george, Rivers",
+      price: "$200,000",
+      description: "A charming townhouse with easy access to local amenities.",
+      imageUrl: "./images/residential-02.png",
+    },
 
-      {
-        id: 5,
-        title: "Cozy Townhouse",
-        location: "Ada george, Rivers",
-        price: "$200,000",
-        description: "A charming townhouse with easy access to local amenities.",
-        imageUrl: "./images/residential-02.png",
-      },
+    {
+      id: 3,
+      title: "Cozy Townhouse",
+      location: "Ada george, Rivers",
+      price: "$200,000",
+      description: "A charming townhouse with easy access to local amenities.",
+      imageUrl: "./images/residential-02.png",
+    },
 
-      {
-        id: 6,
-        title: "Cozy Townhouse",
-        location: "Ada george, Rivers",
-        price: "$200,000",
-        description: "A charming townhouse with easy access to local amenities.",
-        imageUrl: "./images/residential-02.png",
-      },
+    {
+      id: 4,
+      title: "Cozy Townhouse",
+      location: "Ada george, Rivers",
+      price: "$200,000",
+      description: "A charming townhouse with easy access to local amenities.",
+      imageUrl: "./images/residential-02.png",
+    },
 
-      {
-        id: 7,
-        title: "Cozy Townhouse",
-        location: "Ada george, Rivers",
-        price: "$200,000",
-        description: "A charming townhouse with easy access to local amenities.",
-        imageUrl: "./images/residential-02.png",
-      },
+    {
+      id: 5,
+      title: "Cozy Townhouse",
+      location: "Ada george, Rivers",
+      price: "$200,000",
+      description: "A charming townhouse with easy access to local amenities.",
+      imageUrl: "./images/residential-02.png",
+    },
 
-      {
-        id: 8,
-        title: "Cozy Townhouse",
-        location: "Ada george, Rivers",
-        price: "$200,000",
-        description: "A charming townhouse with easy access to local amenities.",
-        imageUrl: "./images/residential-02.png",
-      },
+    {
+      id: 6,
+      title: "Cozy Townhouse",
+      location: "Ada george, Rivers",
+      price: "$200,000",
+      description: "A charming townhouse with easy access to local amenities.",
+      imageUrl: "./images/residential-02.png",
+    },
 
-      {
-        id: 9,
-        title: "Cozy Townhouse",
-        location: "Ada george, Rivers",
-        price: "$200,000",
-        description: "A charming townhouse with easy access to local amenities.",
-        imageUrl: "./images/residential-02.png",
-      },
-    ];
+    {
+      id: 7,
+      title: "Cozy Townhouse",
+      location: "Ada george, Rivers",
+      price: "$200,000",
+      description: "A charming townhouse with easy access to local amenities.",
+      imageUrl: "./images/residential-02.png",
+    },
+
+    {
+      id: 8,
+      title: "Cozy Townhouse",
+      location: "Ada george, Rivers",
+      price: "$200,000",
+      description: "A charming townhouse with easy access to local amenities.",
+      imageUrl: "./images/residential-02.png",
+    },
+
+    {
+      id: 9,
+      title: "Cozy Townhouse",
+      location: "Ada george, Rivers",
+      price: "$200,000",
+      description: "A charming townhouse with easy access to local amenities.",
+      imageUrl: "./images/residential-02.png",
+    },
+  ];
+
+  const filteredListings = residentialListings.filter(
+    (listing) =>
+      listing.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      listing.location.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      listing.price.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   return (
     <div className="container mx-auto p-8">
       <h1 className="text-2xl font-bold mb-4">Residential Listings</h1>
+      <div className="flex justify-end mb-4">
+        <input
+          className="p-2 border border-gray-300 rounded outline-amber-300"
+          type="text"
+          placeholder="Search..."
+          value={searchQuery}
+          onChange={handleInputChange}
+        />
+      </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {residentialListings.map((listing) => (
           <div key={listing.id}>
@@ -112,6 +136,6 @@ const Residential = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Residential;
