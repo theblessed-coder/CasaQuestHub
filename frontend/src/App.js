@@ -9,6 +9,7 @@ import Login from "./pages/Login";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Residential from "./pages/Residential";
+import Commercial from "./pages/Commercial";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/residential" element={<Residential />} />
+          <Route path="/commercial" element={<Commercial />} />
         </Routes>
         <Footer />
       </Router>
