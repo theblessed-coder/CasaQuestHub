@@ -42,7 +42,7 @@ const Header = () => {
       {/* (Logo and Brand Name) */}
       <div className="flex items-center">
         <img
-          src=""
+          src="./images/logo.png"
           alt="CasaQuestHub Logo"
           className="h-8 mr-2"
         />
