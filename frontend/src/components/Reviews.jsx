@@ -30,6 +30,23 @@ const Reviews = () => {
       },
     ]);
 
+    const handleInputChange = (e) => {
+        const {name, value} = e.target;
+        setNewReview({ ...newReview,[name]: value });
+    };
+
+    const handleRatingChange = (rating) => {
+        setNewReview({ ...newReview, rating});
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if(newReview.name && newReview.comment && newReview.rating) {
+            setReviews([...reviews, {...newReview, id: reviews.length + 1}]);
+            setNewReview({ name: "", comment: "", rating: null });
+        }
+    };
+
 
 
   return (
