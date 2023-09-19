@@ -56,6 +56,19 @@ const Reviews = () => {
             <p className="text-gray-800">{review.comment}</p>
             <p className="text-gray-600 font-semibold">- {review.name} ({'★'.repeat(review.rating)})</p>
           </div>
+          <form className="mt-8" onSubmit={handleSubmit}>
+        <h2 className="text-2xl font-bold mb-4">Share Your Review</h2>
+        <div className="mb-4">
+          <label className="block font-semibold mb-2">Name</label>
+          <input
+            type="text"
+            name="name"
+            value={newReview.name}
+            onChange={handleInputChange}
+            className="w-full p-2 border border-gray-300 rounded outline-amber-300"
+            required
+          />
+        </div>
         ))}
       </div>
   )
