@@ -1,6 +1,7 @@
-import React from 'react'
+import React from "react";
+import Reviews from "./Reviews";
 
-function About() {
+const About = () => {
   return (
     <div className="max-w-4xl mx-auto p-4 h-screen">
       <h1 className="text-3xl font-bold mb-4">About CasaQuestHub</h1>
@@ -17,6 +18,7 @@ function About() {
         agents. Additionally, the website will prioritize responsive design to
         ensure a seamless and safe user experience.
       </p>
+      <Reviews />
     </div>
   );
 }
