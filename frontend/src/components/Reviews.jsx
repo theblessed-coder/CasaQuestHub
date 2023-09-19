@@ -47,13 +47,18 @@ const Reviews = () => {
         }
     };
 
-
-
   return (
-    <div>
-    Reviews
-    </div>
+    <div className="mt-8">
+      <h2 className="text-2xl font-bold mb-4">What Our Customers Are Saying</h2>
+      <div className="space-y-4">
+        {reviews.map((review) => (
+          <div key={review.id}>
+            <p className="text-gray-800">{review.comment}</p>
+            <p className="text-gray-600 font-semibold">- {review.name} ({'★'.repeat(review.rating)})</p>
+          </div>
+        ))}
+      </div>
   )
 }
 
-export default Reviews
+export default Reviews;
