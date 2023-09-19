@@ -1,8 +1,7 @@
 const mongoose = require('mongoose');
 
 // Definining  the MongoDB connection URI with actual database URI.
-const mongoURI = 'mongodb+srv://casaquesthub:<TezfZk4KnWLg8NTt>@cluster0.vuuymch.mongodb.net/?retryWrites=true&w=majority';
-
+const mongoURI = 'mongodb+srv://itodoemmanuelitodo:<password>@cluster0.71nirhd.mongodb.net/?retryWrites=true&w=majority'
 // Connect to the MongoDB database
 mongoose.connect(mongoURI, {
   useNewUrlParser: true,
