@@ -19,7 +19,7 @@ const Dropdown = () => {
         Listings <FontAwesomeIcon icon={faCaretDown} />
       </div>
       {isOpen && (
-        <ul className="dropdown-menu absolute mt-2 bg-white text-gray-800 p-5 space-y-2">
+        <ul className="dropdown-menu absolute mt-5 bg-slate-500 text-white p-5 space-y-5">
           <li>
             <Link to="/residential">Residential</Link>
           </li>
@@ -38,11 +38,11 @@ const Dropdown = () => {
 
 const Header = () => {
   return (
-    <header className="bg-black text-white p-4 flex justify-between items-center">
+    <header className="sticky top-0 bg-black text-white p-4 flex justify-between items-center">
       {/* (Logo and Brand Name) */}
       <div className="flex items-center">
         <img
-          src="../../images/logo.png"
+          src="./images/logo.png"
           alt="CasaQuestHub Logo"
           className="h-8 mr-2"
         />
