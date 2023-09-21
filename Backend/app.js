@@ -9,7 +9,6 @@ const bodyParser = require('body-parser');
 const config = require('./config/database');
 const authRoutes = require('./routes/authRoutes');
 const propertyRoutes = require('./routes/propertyRoutes');
-const express = require('express');
 const app = express();
 
 
