@@ -1,7 +1,7 @@
 
 # Casa Quest Hub
 
-Casa Quest Hub is a user-friendly and feature-rich real estate website aimed at simplifying the process of buying, selling, and renting properties
+Casa Quest Hub is a user-friendly and feature-rich real estate website aimed at simplifying the process of buying, selling, and renting real estate properties.
 
 
 ## Features
@@ -9,7 +9,7 @@ Casa Quest Hub is a user-friendly and feature-rich real estate website aimed at 
 - Light/dark mode toggle
 - Live previews
 - Fullscreen mode
-- Cross platform
+- Responsive Design
 
 
 ## Installation
@@ -23,9 +23,9 @@ Install casa-quest-hub with npm
     
 ## Tech Stack
 
-**Client:** HTML, React, TailwindCSS
+**Client:** JSX, React, TailwindCSS
 
-**Server:** Node, MongoDb
+**Server:** Node.js, MongoDb
 
 **Third party services:**
 Google Maps API,

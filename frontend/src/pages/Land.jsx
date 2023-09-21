@@ -10,94 +10,91 @@ const Land = () => {
   const landListings = [
     {
       id: 1,
-      title: "",
-      location: "",
-      price: "",
-      description: "",
+      title: "Prime Land Parcel",
+      location: "Ibeju-Lekki, Lagos",
+      price: "2,500,000.00",
+      description:
+        "A strategically located land parcel in the rapidly developing Ibeju-Lekki area.",
       imageUrl: "./images/land-01.jpg",
     },
-
     {
       id: 2,
-      title: "",
-      location: "",
-      price: "",
-      description: "",
+      title: "Residential Plot",
+      location: "Gwarinpa, Abuja",
+      price: "1,800,000.00",
+      description:
+        "A spacious residential plot in the serene Gwarinpa district of Abuja.",
       imageUrl: "./images/land-02.jpg",
     },
-
     {
       id: 3,
-      title: "",
-      location: "",
-      price: "",
-      description: "",
+      title: "Commercial Land",
+      location: "Ikorodu, Lagos",
+      price: "3,200,000.00",
+      description:
+        "A large parcel of land suitable for commercial development in Ikorodu.",
       imageUrl: "./images/land-03.jpg",
     },
-
     {
       id: 4,
-      title: "",
-      location: "",
-      price: "",
-      description: "",
+      title: "Investment Opportunity",
+      location: "Kubwa, Abuja",
+      price: "1,500,000.00",
+      description:
+        "An affordable land parcel with high potential for appreciation in value.",
       imageUrl: "./images/land-04.jpg",
     },
-
     {
       id: 5,
-      title: "",
-      location: "",
-      price: "",
-      description: "",
+      title: "Industrial Land",
+      location: "Port Harcourt, Rivers",
+      price: "3,800,000.00",
+      description:
+        "A suitable land for industrial purposes with good access to transportation.",
       imageUrl: "./images/land-05.jpg",
     },
-
+    
     {
       id: 6,
-      title: "",
-      location: "",
-      price: "",
-      description: "",
+      title: "Residential Land",
+      location: "Gwagwalada, Abuja",
+      price: "1,300,000.00",
+      description:
+        "A suitable plot for building your dream home in the tranquil Gwagwalada district.",
       imageUrl: "./images/land-01.jpg",
     },
-
     {
       id: 7,
-      title: "",
-      location: "",
-      price: "",
-      description: "",
+      title: "Agricultural Land",
+      location: "Kano, Kano",
+      price: "2,300,000.00",
+      description:
+        "A fertile land suitable for agricultural activities near the city of Kano.",
       imageUrl: "./images/land-02.jpg",
     },
-
+    
     {
       id: 8,
-      title: "",
-      location: "",
-      price: "",
-      description: "",
+      title: "Investment Land Parcel",
+      location: "Ogun State",
+      price: "2,700,000.00",
+      description:
+        "An investment-worthy land parcel in the promising Ogun State region.",
       imageUrl: "./images/land-03.jpg",
     },
 
     {
       id: 9,
-      title: "",
-      location: "",
-      price: "",
-      description: "",
+      title: "Commercial Plot",
+      location: "Awka, Anambra",
+      price: "3,500,000.00",
+      description:
+        "A strategically located plot for commercial ventures in Awka.",
       imageUrl: "./images/land-04.jpg",
     },
 
-    {
-      id: 10,
-      title: "",
-      location: "",
-      price: "",
-      description: "",
-      imageUrl: "./images/land-05.jpg",
-    },
   ];
+
 
   const filteredListings = landListings.filter(
     (listing) =>
@@ -129,7 +126,7 @@ const Land = () => {
             />
             <h2 className="text-xl font-bold mb-2">{listing.title}</h2>
             <p className="text-gray-700 mb-2">{listing.location}</p>
-            <p className="text-green-600 font-semibold mb-2">{listing.price}</p>
+            <p className="text-green-600 font-semibold mb-2">{`\u20A6${listing.price}`}</p>
             <p className="text-gray-800">{listing.description}</p>
             <div className="mt-4">
               <button className="bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-700 mr-2">
