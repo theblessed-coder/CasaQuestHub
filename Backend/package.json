@@ -15,9 +15,14 @@
     "express": "^4.18.2",
     "fs": "^0.0.1-security",
     "https": "^1.0.0",
-    "jsonwebtoken": "^9.0.2"
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.1.0",
+    "mongoose": "^7.5.2"
   },
   "devDependencies": {
+    "@babel/cli": "^7.22.15",
+    "@babel/core": "^7.22.20",
+    "@babel/preset-env": "^7.22.20",
     "eslint": "^8.49.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-react": "^7.33.2"
