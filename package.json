@@ -1,0 +1,12 @@
+{
+  "name": "casa-quest-hub",
+  "version": "1.0.0",
+  "description": "Casa Quest Hub is a user-friendly and feature-rich real estate website aimed at simplifying the process of buying, selling, and renting properties",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
