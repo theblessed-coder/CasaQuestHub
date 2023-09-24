@@ -1,16 +1,17 @@
+#!/usr/bin/env node
 // app.js
 const express = require('express');
 const mongoose = require('mongoose');
 const https = require('https');
 const fs = require('fs');
 const bodyParser = require('body-parser');
-const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken');
+// Require the database connection file
 const config = require('./config/database');
 const authRoutes = require('./routes/authRoutes');
 const propertyRoutes = require('./routes/propertyRoutes');
-
 const app = express();
+
+
 
 
 

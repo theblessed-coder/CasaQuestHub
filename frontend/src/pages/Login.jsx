@@ -50,6 +50,7 @@ const Login = () => {
         >
           LOGIN
         </button>
+        <p className="text-right pt-2">Don't have an account yet? <a href="/Signup"> <u>Sign up</u></a></p>
       </form>
     </div>
   );

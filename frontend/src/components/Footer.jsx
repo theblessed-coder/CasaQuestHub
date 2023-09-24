@@ -31,6 +31,7 @@ function Footer() {
               <a
                 href="https://www.instagram.com/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="text-white hover:text-yellow-500 p-2"
               >
                 <FontAwesomeIcon icon={faInstagram} size="xl" />
@@ -38,6 +39,7 @@ function Footer() {
               <a
                 href="https://twitter.com/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="text-white hover:text-yellow-500 p-2"
               >
                 <FontAwesomeIcon icon={faXTwitter} size="xl" />
@@ -45,6 +47,7 @@ function Footer() {
               <a
                 href="https://www.facebook.com/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="text-white hover:text-yellow-500 p-2"
               >
                 <FontAwesomeIcon icon={faFacebookF} size="xl" />
