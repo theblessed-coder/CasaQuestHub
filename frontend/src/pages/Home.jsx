@@ -1,9 +1,10 @@
 import React from "react";
+import Featured from "../components/Featured";
 
 const Home = () => {
   return (
     <div
-      className="relative h-screen bg-cover bg-center bg-no-repeat"
+      className="relative bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: 'url("./images/her0.jpg")' }}
     >
       <div className="max-w-4xl mx-auto h-full flex flex-col justify-center items-center text-center bg-black bg-opacity-10 text-black">
@@ -29,6 +30,13 @@ const Home = () => {
           <button className="bg-yellow-500 text-white font-semibold py-2 px-4 rounded hover:bg-yellow-700">
             Search
           </button>
+        </div>
+      </div>
+
+      <div className="bg-white">
+        <div className="max-w-4xl mx-auto p-8">
+          <h1 className="text-2xl font-bold mb-4">Featured</h1>
+          <Featured />
         </div>
       </div>
     </div>
