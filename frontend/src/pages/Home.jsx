@@ -7,21 +7,21 @@ const Home = () => {
       className="relative bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: 'url("./images/her0.jpg")' }}
     >
-      <div className="max-w-4xl mx-auto h-full flex flex-col justify-center items-center text-center bg-black bg-opacity-10 text-black">
-        <h1 className="text-3xl font-bold mb-4">Welcome to CasaQuestHub</h1>
-        <p className="mb-4">
+      <div className="max-w-4xl font-light mx-auto h-full flex flex-col justify-center items-center text-center bg-black bg-opacity-50 text-white">
+        <h1 className="text-3xl mt-4 mb-2 font-medium">Welcome to CasaQuestHub</h1>
+        <p className="">
           Discover your dream home with us. Browse through a wide range of
           residential, commercial, and land listings.
         </p>
-        <p className="mb-4">
+        <p className="">
           Whether you're buying, selling, or renting, we're here to help you
           every step of the way.
         </p>
-        <p className="mb-8">
+        <p className="mb-3">
           Start your journey with CasaQuestHub today and find the perfect place
           to call home.
         </p>
-        <div className="flex items-center">
+        <div className="flex items-center mb-4">
           <input
             type="text"
             placeholder="Search for listings..."
