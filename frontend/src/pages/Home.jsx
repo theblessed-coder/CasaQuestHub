@@ -9,19 +9,19 @@ const Home = () => {
     >
       <div className="max-w-4xl font-light mx-auto h-full flex flex-col justify-center items-center text-center bg-black bg-opacity-50 text-white">
         <h1 className="text-3xl mt-4 mb-2 font-medium">Welcome to CasaQuestHub</h1>
-        <p className="">
+        <p className="text-sm">
           Discover your dream home with us. Browse through a wide range of
           residential, commercial, and land listings.
         </p>
-        <p className="">
+        <p className="text-sm">
           Whether you're buying, selling, or renting, we're here to help you
           every step of the way.
         </p>
-        <p className="mb-3">
+        <p className="text-sm">
           Start your journey with CasaQuestHub today and find the perfect place
           to call home.
         </p>
-        <div className="flex items-center mb-4">
+        <div className="flex items-center mt-4 mb-4">
           <input
             type="text"
             placeholder="Search for listings..."
