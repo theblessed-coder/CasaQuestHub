@@ -46,7 +46,7 @@ const Header = () => {
           alt="CasaQuestHub Logo"
           className="h-8 mr-2"
         />
-        <span className="text-xl font-bold">CasaQuestHub</span>
+        <span className="sm:text-xl font-bold">CasaQuestHub</span>
       </div>
 
       {/* (Navigation Links) */}
