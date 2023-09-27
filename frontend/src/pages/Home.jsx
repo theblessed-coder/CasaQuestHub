@@ -4,7 +4,7 @@ import Featured from "../components/Featured";
 const Home = () => {
   return (
     <div
-      className="relative bg-cover bg-center bg-no-repeat"
+      className="bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: 'url("./images/her0.jpg")' }}
     >
       <div className="max-w-4xl font-light mx-auto h-full flex flex-col justify-center items-center text-center bg-black bg-opacity-50 text-white">
