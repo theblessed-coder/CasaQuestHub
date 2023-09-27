@@ -14,19 +14,19 @@ const Dropdown = () => {
     <div className="dropdown">
       <div
         onClick={toggleDropdown}
-        className="dropdown-toggle text-yellow-500 pr-4 cursor-pointer hover:translate-y-[-5px] transition duration-500 ease-in-out"
+        className="dropdown-toggle pr-4 text-yellow-500 cursor-pointer hover:translate-y-[-5px] transition duration-500 ease-in-out"
       >
         Listings <FontAwesomeIcon icon={faCaretDown} />
       </div>
       {isOpen && (
-        <ul className="dropdown-menu absolute mt-5 bg-slate-500 text-white p-5 space-y-5">
-          <li>
+        <ul className="dropdown-menu absolute mt-5 bg-black text-sm text-yellow-500 p-5 space-y-5">
+          <li className="hover:underline hover:underline-offset-2">
             <Link to="/residential">Residential</Link>
           </li>
-          <li>
+          <li className="hover:underline hover:underline-offset-2">
             <Link to="/commercial">Commercial</Link>
           </li>
-          <li>
+          <li className="hover:underline hover:underline-offset-2">
             <Link to="/land">Land</Link>
           </li>
         </ul>
