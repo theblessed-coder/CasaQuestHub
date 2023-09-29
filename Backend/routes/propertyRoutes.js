@@ -1,7 +1,7 @@
 // routes/propertyRoutes.js
-const express = require('express');
-const router = express.Router();
-const Property = require('../models/property');
+import { Router } from 'express';
+const router = Router();
+import Property, { find } from '../models/property';
 
 // Upload a property (authentication required)
 router.post('/upload-property', async (req, res) => {
@@ -21,7 +21,7 @@ router.get('/search', async (req, res) => {
     const { location, company } = req.query;
 
     try {
-        const matchingProperties = await Property.find({
+        const matchingProperties = await find({
             location: location,
             area: area,
             price: price,
@@ -34,4 +34,4 @@ router.get('/search', async (req, res) => {
     }
 });
 
-module.exports = router;
+export default router;

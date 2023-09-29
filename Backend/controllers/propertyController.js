@@ -4,20 +4,20 @@ const Property = require('../models/property');
 // Defining controller methods
 
 // Get all properties
-exports.getAllProperties = async (req, res) => {
+export async function getAllProperties(_req, res) {
   try {
-    const properties = await Property.find();
+    const properties = await find();
     res.json(properties);
   } catch (error) {
     res.status(500).json({ message: 'Error fetching properties from CasaQuestHub', error: error.message });
   }
-};
+}
 
 // Get a single property by ID
-exports.getPropertyById = async (req, res) => {
+export async function getPropertyById(req, res) {
   const { id } = req.params;
   try {
-    const property = await Property.findById(id);
+    const property = await findById(id);
     if (!property) {
       return res.status(404).json({ message: 'Property not found CasaQuestHub' });
     }
@@ -25,10 +25,10 @@ exports.getPropertyById = async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: 'Error fetching property fro CasaQuestHub', error: error.message });
   }
-};
+}
 
 // Create a new property
-exports.createProperty = async (req, res) => {
+export async function createProperty(req, res) {
   const { title, description, price } = req.body;
   try {
     const property = new Property({
@@ -41,14 +41,14 @@ exports.createProperty = async (req, res) => {
   } catch (error) {
     res.status(400).json({ message: 'Error creating property on CasaQuestHub', error: error.message });
   }
-};
+}
 
 // Update an existing property by ID
-exports.updateProperty = async (req, res) => {
+export async function updateProperty(req, res) {
   const { id } = req.params;
   const { title, description, price } = req.body;
   try {
-    const property = await Property.findByIdAndUpdate(
+    const property = await findByIdAndUpdate(
       id,
       { title, description, price },
       { new: true }
@@ -60,13 +60,13 @@ exports.updateProperty = async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: 'Error updating property on CasaQuestHub', error: error.message });
   }
-};
+}
 
 // Delete a property by ID
-exports.deleteProperty = async (req, res) => {
+export async function deleteProperty(req, res) {
   const { id } = req.params;
   try {
-    const property = await Property.findByIdAndRemove(id);
+    const property = await findByIdAndRemove(id);
     if (!property) {
       return res.status(404).json({ message: 'Property not found on CasaQuestHub' });
     }
@@ -74,5 +74,5 @@ exports.deleteProperty = async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: 'Error deleting property', error: error.message });
   }
-};
+}
 
