@@ -5,7 +5,7 @@ const nodemailer = require('nodemailer'); // For sending password reset emails
 
 // Import your User model 
 const User = require('../models/user');
-const { secretKey } = require('../config/jwt'); // Replace with your secret key
+const { secretKey } = require('../config/jwt'); // JWT secret key
 
 // Registration route
 router.post('/register', async (req, res) => {
