@@ -154,9 +154,9 @@ const Land = () => {
         ))}
       </div>
 
-      {selectedListing && (
+      {selectedListing && 
         <Modal listing={selectedListing} closeModal={closeModal} />
-      )}
+      }
     </div>
   );
 };

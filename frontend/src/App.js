@@ -12,6 +12,7 @@ import Contact from "./pages/Contact";
 import Residential from "./pages/Residential";
 import Commercial from "./pages/Commercial";
 import Land from "./pages/Land";
+import CheckoutPage from "./pages/CheckoutPage";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/commercial" element={<Commercial />} />
           <Route path="/land" element={<Land />} />
           <Route path="/reviews" element={<Reviews />} />
+          <Route path="/checkout" element={<CheckoutPage />} />
         </Routes>
         <Footer />
       </Router>
