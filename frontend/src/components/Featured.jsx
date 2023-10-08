@@ -1,6 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
+import Modal from "../components/Modal";
+import { Link } from "react-router-dom";
 
 const Featured = () => {
+  const [selectedListing, setSelectedListing] = useState(null);
+
+  const openModal = (listing) => {
+    setSelectedListing(listing);
+  };
+
+  const closeModal = () => {
+    setSelectedListing(null);
+  };
+
   const featuredListings = [
     {
       id: 1,
@@ -47,15 +59,25 @@ const Featured = () => {
           <p className="text-green-600 font-semibold mb-2">{listing.price}</p>
           <p className="text-gray-800">{listing.description}</p>
           <div className="mt-4">
-            <button className="bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-700 mr-2">
+            <button
+              className="bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-700 mr-2"
+              onClick={() => openModal(listing)}
+            >
               View Details
             </button>
             <button className="bg-green-500 text-white font-semibold py-2 px-4 rounded hover:bg-green-700">
-              Checkout
+              <Link to="/checkout">Checkout</Link>
             </button>
           </div>
         </div>
       ))}
+      {selectedListing && (
+        <Modal
+          listing={selectedListing}
+          closeModal={closeModal}
+          modalType="view"
+        />
+      )}
     </div>
   );
 };
