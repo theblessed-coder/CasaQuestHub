@@ -116,7 +116,7 @@ const Commercial = () => {
 
   return (
     <div className="container mx-auto p-8">
-      <h1 className="text-2xl font-bold mb-4 ">Commercial Listings</h1>
+      <h1 className="text-2xl font-bold mb-4">Commercial Listings</h1>
       <div className="flex justify-end mb-4">
         <input
           className="p-2 border border-gray-300 rounded focus:outline-yellow-500"
