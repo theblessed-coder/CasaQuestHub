@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Modal from "../components/Modal";
+import {Link} from "react-router-dom";
 
 const Land = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -147,7 +148,7 @@ const Land = () => {
                 View Details
               </button>
               <button className="bg-green-500 text-white font-semibold py-2 px-4 rounded hover:bg-green-700">
-                Checkout
+                <Link to="/checkout">Checkout</Link>
               </button>
             </div>
           </div>

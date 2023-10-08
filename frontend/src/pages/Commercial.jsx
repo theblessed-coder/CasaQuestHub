@@ -4,12 +4,13 @@ import { Link } from "react-router-dom";
 
 const Commercial = () => {
   const [searchQuery, setSearchQuery] = useState("");
-  const [selectedListing, setSelectedListing] = useState(null);
 
   const handleInputChange = (e) => {
     setSearchQuery(e.target.value);
   };
 
+  const [selectedListing, setSelectedListing] = useState(null);
+  
   const openModal = (listing) => {
     setSelectedListing(listing);
   };
