@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Modal from "../components/Modal";
 import { Link } from "react-router-dom";
 
 const Commercial = () => {
@@ -7,16 +6,6 @@ const Commercial = () => {
 
   const handleInputChange = (e) => {
     setSearchQuery(e.target.value);
-  };
-
-  const [selectedListing, setSelectedListing] = useState(null);
-  
-  const openModal = (listing) => {
-    setSelectedListing(listing);
-  };
-
-  const closeModal = () => {
-    setSelectedListing(null);
   };
 
   const commercialListings = [
@@ -140,12 +129,6 @@ const Commercial = () => {
             <p className="text-green-600 font-semibold mb-2">{`\u20A6${listing.price}`}</p>
             <p className="text-gray-800">{listing.description}</p>
             <div className="mt-4">
-              <button
-                className="bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-700 mr-2"
-                onClick={() => openModal(listing)}
-              >
-                View Details
-              </button>
               <button className="bg-green-500 text-white font-semibold py-2 px-4 rounded hover:bg-green-700">
                 <Link to="/checkout">Checkout</Link>
               </button>
@@ -153,10 +136,6 @@ const Commercial = () => {
           </div>
         ))}
       </div>
-
-      {selectedListing && (
-        <Modal listing={selectedListing} closeModal={closeModal} />
-      )}
     </div>
   );
 };
