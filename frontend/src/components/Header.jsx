@@ -19,7 +19,7 @@ const Dropdown = () => {
         Listings <FontAwesomeIcon icon={faCaretDown} />
       </div>
       {isOpen && (
-        <ul className="dropdown-menu absolute mt-5 bg-black text-sm text-yellow-500 p-5 space-y-5">
+        <ul onMouseLeave={toggleDropdown} onClick={toggleDropdown} className="dropdown-menu absolute mt-5 bg-black text-sm text-yellow-500 p-5 space-y-5">
           <li className="hover:underline hover:underline-offset-2">
             <Link to="/residential">Residential</Link>
           </li>

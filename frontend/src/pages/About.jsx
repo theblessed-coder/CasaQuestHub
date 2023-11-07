@@ -4,7 +4,7 @@ import Reviews from "../components/Reviews";
 const About = () => {
   return (
     <div className="max-w-4xl mx-auto ">
-      <h1 className="text-3xl font-bold mb-4">About CasaQuestHub</h1>
+      <h1 className="text-3xl font-bold mt-6 mb-4">About CasaQuestHub</h1>
       <p className="mb-4">
         Casa Quest Hub is a user-friendly and
         feature-rich real estate website aimed at simplifying the process of
