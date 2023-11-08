@@ -41,11 +41,11 @@ const Header = () => {
     <header className="sticky top-0 bg-black text-white p-4 flex justify-between items-center">
       {/* (Logo and Brand Name) */}
       <div className="flex items-center">
-        <img
+        <a href="/"><img
           src="./images/logo.png"
           alt="CasaQuestHub Logo"
           className="h-8 mr-2"
-        />
+        /></a>
         <span className="sm:text-xl font-bold">CasaQuestHub</span>
       </div>
 
