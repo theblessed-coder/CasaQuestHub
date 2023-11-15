@@ -13,18 +13,6 @@ import Residential from "./pages/Residential";
 import Commercial from "./pages/Commercial";
 import Land from "./pages/Land";
 import CheckoutPage from "./pages/CheckoutPage";
-import { initializeApp } from "firebase/app";
-
-const firebaseConfig = {
-  apiKey: "AIzaSyBzyE18oPmD1XiLip0PPh1hbyWWGQ4sWX0",
-  authDomain: "casa-quest-hub-cd216.firebaseapp.com",
-  projectId: "casa-quest-hub-cd216",
-  storageBucket: "casa-quest-hub-cd216.appspot.com",
-  messagingSenderId: "1016112504107",
-  appId: "1:1016112504107:web:537dc46abe8f5ab28a396e"
-  };
-
-const app = initializeApp(firebaseConfig);
 
 function App() {
   return (
