@@ -18,7 +18,7 @@ const Dropdown = () => {
     <div className="dropdown">
       <div
         onClick={toggleDropdown}
-        className="dropdown-toggle text-xl pr-4 text-yellow-500 cursor-pointer hover:translate-y-[-5px] transition duration-500 ease-in-out"
+        className="dropdown-toggle text-base pr-4 text-yellow-500 cursor-pointer hover:translate-y-[-5px] transition duration-500 ease-in-out"
       >
         Listings <FontAwesomeIcon icon={faCaretDown} />
       </div>
@@ -29,17 +29,17 @@ const Dropdown = () => {
           className="dropdown-menu absolute mt-5 bg-black text-sm text-yellow-500 p-5 space-y-5"
         >
           <li className="hover:underline hover:underline-offset-2">
-            <Link to="/residential" className="text-xl">
+            <Link to="/residential" className="text-base">
               Residential
             </Link>
           </li>
           <li className="hover:underline hover:underline-offset-2">
-            <Link to="/commercial" className="text-xl">
+            <Link to="/commercial" className="text-base">
               Commercial
             </Link>
           </li>
           <li className="hover:underline hover:underline-offset-2">
-            <Link to="/land" className="text-xl">
+            <Link to="/land" className="text-base">
               Land
             </Link>
           </li>
@@ -50,11 +50,11 @@ const Dropdown = () => {
 };
 
 const Header = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleWindowSizeChange = () => {
-    setIsMobile(window.innerWidth < 768);
+    setIsMobile(window.innerWidth < 640);
   };
 
   useEffect(() => {
