@@ -8,20 +8,14 @@ const Home = () => {
       style={{ backgroundImage: 'url("./images/her0.jpg")' }}
     >
       <div className="max-w-4xl font-light mx-auto py-10 flex flex-col justify-center items-center text-center bg-black bg-opacity-50 text-white">
-        <h1 className="text-3xl mt-8 mb-8 font-medium animate__animated animate__fadeInDown">
+        <h1 className="text-3xl static mt-8 mb-8 font-medium">
           Welcome to CasaQuestHub
         </h1>
-        <p className="text-lg">
+        <p className="text-lg pr-10 pl-10">
           Discover your dream home with us. Browse through a wide range of
-          residential, commercial, and land listings.
-        </p>
-        <p className="text-lg">
-          Whether you're buying, selling, or renting, we're here to help you
-          every step of the way.
-        </p>
-        <p className="text-lg">
-          Start your journey with CasaQuestHub today and find the perfect place
-          to call home.
+          residential, commercial, and land listings. Whether you're buying, selling,
+          or renting, we're here to help you every step of the way. Start your
+          journey with CasaQuestHub today and find the perfect place to call home.
         </p>
         {/*
         <div className="flex items-center mt-4 mb-4">
