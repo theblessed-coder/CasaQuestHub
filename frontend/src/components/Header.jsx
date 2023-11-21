@@ -18,7 +18,7 @@ const Dropdown = () => {
     <div className="dropdown">
       <div
         onClick={toggleDropdown}
-        className="dropdown-toggle text-base pr-4 text-yellow-500 cursor-pointer hover:translate-y-[-5px] transition duration-500 ease-in-out"
+        className="dropdown-toggle text-xl pr-4 text-yellow-500 cursor-pointer hover:translate-y-[-5px] transition duration-500 ease-in-out"
       >
         Listings <FontAwesomeIcon icon={faCaretDown} />
       </div>
@@ -28,17 +28,17 @@ const Dropdown = () => {
           onClick={toggleDropdown}
           className="dropdown-menu absolute mt-5 bg-black text-sm text-yellow-500 p-5 space-y-5"
         >
-          <li className="hover:underline hover:underline-offset-2">
+          <li className="hover:underline hover:underline-offset-2 text-xl">
             <Link to="/residential" className="text-base">
               Residential
             </Link>
           </li>
-          <li className="hover:underline hover:underline-offset-2">
+          <li className="hover:underline hover:underline-offset-2 text-xl">
             <Link to="/commercial" className="text-base">
               Commercial
             </Link>
           </li>
-          <li className="hover:underline hover:underline-offset-2">
+          <li className="hover:underline hover:underline-offset-2 text-xl">
             <Link to="/land" className="text-base">
               Land
             </Link>
