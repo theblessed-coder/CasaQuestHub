@@ -6,7 +6,6 @@ Casa Quest Hub is a user-friendly and feature-rich real estate website aimed at 
 
 ## Features
 
-- Light/dark mode toggle
 - Live previews
 - Fullscreen mode
 - Responsive Design
