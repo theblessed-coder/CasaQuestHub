@@ -3,7 +3,7 @@ const NewListing = () => {
       <>
         <h3 className="text-2xl font-bold mb-4">New Listing</h3>
         <hr className="mb-4"/>
-        <div className="w-full mb-12 bg-white md:flex p-2 md:p-4 shadow relative">
+        <div className="w-full mb-12 bg-white md:flex p-2 md:p-4 shadow hover:shadow-xl relative">
 
           <h4 className="absolute top-0 right-0 py-2 px-4 bg-yellow-500">SALE</h4>
           {/* New Listing left */}
