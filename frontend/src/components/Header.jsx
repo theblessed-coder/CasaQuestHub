@@ -76,7 +76,7 @@ const Header = () => {
   return (
     <header
       className={`bg-black text-white p-4 ${
-        isMobile ? "relative" : "sticky top-0"
+        isMobile ? "relative" : "sticky top-0 z-10"
       }`}
     >
       <div className="flex justify-between items-center">

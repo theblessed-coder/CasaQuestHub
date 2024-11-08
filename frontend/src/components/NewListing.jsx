@@ -3,16 +3,18 @@ const NewListing = () => {
       <>
         <h3 className="text-2xl font-bold mb-4">New Listing</h3>
         <hr className="mb-4"/>
-        <div className="w-full mb-12 bg-white md:flex p-2 md:p-4 shadow">
+        <div className="w-full mb-12 bg-white md:flex p-2 md:p-4 shadow relative">
 
+          <h4 className="absolute top-0 right-0 py-2 px-4 bg-yellow-500">SALE</h4>
           {/* New Listing left */}
           <div className="w-full md:w-1/2">
             <img className="w-full md:w-11/12" src="./images/new-listing.png" alt="newly built duplex house" />
           </div>
           
           {/* New Listing right */}
-          <div className="md:w-1/2 my-4 md:my-8">
-            <div className="flex items-end justify-between">
+          <div className="md:w-1/2 my-4 md:my-8 relative z-0">
+            
+            <div className="flex items-end justify-between md:justify-normal">
               <h3 className="mr-6 text-2xl">Duplex</h3>
               <h3 className="font-medium text-3xl md:text-4xl text-yellow-500">N35,000,000</h3>
             </div>
