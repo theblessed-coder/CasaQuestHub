@@ -14,7 +14,7 @@ const NewListing = () => {
           <div className="md:w-1/2 my-4 md:my-8">
             <div className="flex items-end justify-between">
               <h3 className="mr-6 text-2xl">Duplex</h3>
-              <h3 className="text-4xl text-yellow-500">N35,000,000</h3>
+              <h3 className="text-3xl md:text-4xl text-yellow-500">N35,000,000</h3>
             </div>
             <p className="text-gray-500 mb-8 mb:mb-14">No. 7 Ademola Crescent, Ilupeju, Lagos</p>
             
