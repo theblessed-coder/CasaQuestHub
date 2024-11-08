@@ -1,5 +1,6 @@
 import React from "react";
 import Featured from "../components/Featured";
+import NewListing from "../components/NewListing";
 
 const Home = () => {
   return (
@@ -32,7 +33,9 @@ const Home = () => {
 
       <div className="bg-white">
         <div className="max-w-4xl mx-auto p-8">
+          <NewListing />
           <h1 className="text-2xl font-bold mb-4">Featured</h1>
+          <hr className="mb-4"/>
           <Featured />
         </div>
       </div>
