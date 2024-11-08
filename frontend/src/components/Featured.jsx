@@ -37,7 +37,7 @@ const Featured = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       {featuredListings.map((listing) => (
-        <div key={listing.id}>
+        <div key={listing.id} className="shadow p-2">
           <img
             src={listing.imageUrl}
             alt={listing.title}
