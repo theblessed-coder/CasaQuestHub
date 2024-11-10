@@ -18,7 +18,7 @@ const Dropdown = () => {
     <div className="dropdown">
       <div
         onClick={toggleDropdown}
-        className="dropdown-toggle text-xl md:text-base pr-4 text-yellow-500 cursor-pointer hover:translate-y-[-5px] transition duration-500 ease-in-out"
+        className="dropdown-toggle text-xl sm:text-base pr-4 text-yellow-500 cursor-pointer hover:translate-y-[-5px] transition duration-500 ease-in-out"
       >
         Listings <FontAwesomeIcon icon={faCaretDown} />
       </div>
