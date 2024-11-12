@@ -5,7 +5,7 @@ const NewListing = () => {
         <hr className="mb-4"/>
 
         {/* New Listing Component */}
-        <div className="w-full mb-12 bg-white md:flex p-2 md:p-4 shadow hover:shadow-xl relative transition delay-300 animate-[fadein_1s_ease-in_backwards]">
+        <div className="w-full mb-12 bg-white md:flex p-2 md:p-4 shadow hover:shadow-xl relative transition delay-500 animate-[fadeIn_1s_ease-in_backwards]">
 
           <h4 className="absolute top-0 right-0 py-2 px-4 bg-yellow-500">SALE</h4>
           {/* Left */}
