@@ -3,15 +3,17 @@ const NewListing = () => {
       <>
         <h3 className="text-2xl font-bold mb-4">New Listing</h3>
         <hr className="mb-4"/>
-        <div className="w-full mb-12 bg-white md:flex p-2 md:p-4 shadow hover:shadow-xl relative">
+
+        {/* New Listing Component */}
+        <div className="w-full mb-12 bg-white md:flex p-2 md:p-4 shadow hover:shadow-xl relative transition delay-300 animate-[fadein_1s_ease-in_backwards]">
 
           <h4 className="absolute top-0 right-0 py-2 px-4 bg-yellow-500">SALE</h4>
-          {/* New Listing left */}
+          {/* Left */}
           <div className="w-full md:w-1/2">
             <img className="w-full md:w-11/12" src="./images/new-listing.png" alt="newly built duplex house" />
           </div>
           
-          {/* New Listing right */}
+          {/* Right */}
           <div className="md:w-1/2 my-4 md:my-8 relative z-0">
             
             <div className="flex items-end justify-between md:justify-normal">
