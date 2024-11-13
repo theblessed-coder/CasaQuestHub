@@ -9,7 +9,10 @@ const Home = () => {
       className="bg-auto bg-no-repeat"
       style={{ backgroundImage: 'url("./images/hero-image.jpg")' }}
     >
-      <div className="w-full font-light mx-auto px-10 py-12 flex flex-col justify-center items-center text-center bg-black bg-opacity-60 text-white transition delay-200 animate-[fade_0.7s_ease-in_backwards]">
+      <div className="w-full font-light 
+                      mx-auto px-10 py-12 flex flex-col justify-center 
+                      items-center text-center bg-black bg-opacity-60 text-white 
+                      transition delay-400 animate-[fade_0.7s_ease-in_backwards]">
         <h1 className="text-3xl static mt-8 mb-2 font-medium">
           Welcome to CasaQuestHub
         </h1>
