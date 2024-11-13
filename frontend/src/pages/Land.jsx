@@ -119,7 +119,7 @@ const Land = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {filteredListings.map((listing) => (
-          <div key={listing.id} className="p-2 shadow hover:shadow-xl transition delay-100 animate-[fadeInDiag_0.3s_ease]">
+          <div key={listing.id} className="p-2 shadow hover:shadow-xl transition delay-100 motion-preset-slide-right">
             <img
               src={listing.imageUrl}
               alt={listing.title}
