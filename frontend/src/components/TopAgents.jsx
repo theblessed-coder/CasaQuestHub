@@ -32,12 +32,12 @@ export const TopAgents = () => {
         <hr className="mb-4"/>
         <div className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1'>
             {topAgents.map((agent) => (
-              <div key={agent.id} className='flex sm:flex-col my-8 items-center md:w-2/3'>
+              <div key={agent.id} className='flex sm:flex-col my-8 ml-8 items-center md:w-2/3 motion-preset-slide-left'>
                 <img src={agent.imageUrl} alt="real estate agent" />
                 <div className='w-full sm:text-center m-6 sm:flex-col sm:justify-center'>
                   <h4 className='text-xl'>{agent.name}</h4>
-                  <p className='w-full'>{agent.company}</p>
-                  <p className='text-gray-500'>{agent.number}</p>
+                  <p className='w-full text-md font-bold text-yellow-500'>{agent.company}</p>
+                  <p className='text-gray-500 text-sm'>{agent.number}</p>
                 </div>
               </div>
             ))}
