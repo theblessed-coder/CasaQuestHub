@@ -122,7 +122,7 @@ const Residential = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {filteredListings.map((listing) => (
-          <div key={listing.id}>
+          <div key={listing.id} className="p-2 shadow hover:shadow-xl motion-preset-slide-right">
             <img
               src={listing.imageUrl}
               alt={listing.title}

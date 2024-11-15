@@ -18,7 +18,7 @@ const Dropdown = () => {
     <div className="dropdown">
       <div
         onClick={toggleDropdown}
-        className="dropdown-toggle text-xl pr-4 text-yellow-500 cursor-pointer hover:translate-y-[-5px] transition duration-500 ease-in-out"
+        className="dropdown-toggle text-xl sm:text-base pr-4 text-yellow-500 cursor-pointer hover:translate-y-[-2px] transition duration-500 ease-in-out"
       >
         Listings <FontAwesomeIcon icon={faCaretDown} />
       </div>
@@ -76,7 +76,7 @@ const Header = () => {
   return (
     <header
       className={`bg-black text-white p-4 ${
-        isMobile ? "relative" : "sticky top-0"
+        isMobile ? "relative" : "sticky top-0 z-10"
       }`}
     >
       <div className="flex justify-between items-center">
@@ -109,7 +109,7 @@ const Header = () => {
           >
             <a
               href="/"
-              className={`block text-yellow-500 hover:translate-y-[-5px] transition duration-500 ease-in-out ${
+              className={`block text-yellow-500 hover:translate-y-[-2px] transition duration-500 ease-in-out ${
                 isMobile ? "w-full my-5 text-xl" : "mr-4"
               }`}
               onClick={closeMenu}
@@ -121,7 +121,7 @@ const Header = () => {
 
             <a
               href="/about"
-              className={`block text-yellow-500 hover:translate-y-[-5px] transition duration-500 ease-in-out ${
+              className={`block text-yellow-500 hover:translate-y-[-2px] transition duration-500 ease-in-out ${
                 isMobile ? "w-full my-5 text-xl" : "mr-4"
               }`}
               onClick={closeMenu}
@@ -130,7 +130,7 @@ const Header = () => {
             </a>
             <a
               href="/contact"
-              className={`block text-yellow-500 hover:translate-y-[-5px] transition duration-500 ease-in-out ${
+              className={`block text-yellow-500 hover:translate-y-[-2px] transition duration-500 ease-in-out ${
                 isMobile ? "w-full my-5 text-xl" : "mr-4"
               }`}
               onClick={closeMenu}
@@ -139,7 +139,7 @@ const Header = () => {
             </a>
             <a
               href="/signup"
-              className={`block text-black bg-yellow-500 px-2 py-1 rounded hover:translate-y-[-5px] transition duration-500 ease-in-out ${
+              className={`block text-black bg-yellow-500 px-2 py-1 rounded transition duration-500 ease-in-out ${
                 isMobile ? "w-full py-3 my-5 text-xl" : "mr-4"
               }`}
               onClick={closeMenu}
