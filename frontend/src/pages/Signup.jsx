@@ -23,11 +23,11 @@ const Signup = () => {
     <div className="max-w-lg mx-auto my-5 bg-white rounded p-8 shadow-lg flex flex-col">
    
         <form
-          className="transition duration-1000 ease-in-out"
+          className="transition duration-1000 "
           onSubmit={handleSubmit}
         >
-          <div className="mb-4">
-            <label className="block font-semibold mb-2">First Name</label>
+          <div className="mb-8">
+            <label className="block mb-2 text-sm font-semibold">First Name</label>
             <input
               type="text"
               name="firstName"
@@ -38,8 +38,8 @@ const Signup = () => {
             />
           </div>
 
-          <div className="mb-4">
-            <label className="block font-semibold mb-2">Last Name</label>
+          <div className="mb-8">
+            <label className="block font-semibold mb-2 text-sm">Last Name</label>
             <input
               type="text"
               name="lastName"
@@ -50,8 +50,8 @@ const Signup = () => {
             />
           </div>
 
-          <div className="mb-4">
-            <label className="block font-semibold mb-2">Email</label>
+          <div className="mb-8">
+            <label className="block font-semibold mb-2 text-sm">Email</label>
             <input
               type="email"
               name="email"
@@ -62,8 +62,8 @@ const Signup = () => {
             />
           </div>
 
-          <div className="mb-6">
-            <label className="block font-semibold mb-2">Password</label>
+          <div className="mb-2">
+            <label className="block font-semibold mb-2 text-sm">Password</label>
             <input
               type="password"
               name="password"
@@ -73,7 +73,7 @@ const Signup = () => {
               required
             />
           </div>
-          <p className="text-center pb-2">
+          <p className="text-center text-gray-500 text-xs mb-6">
             By clicking Register Now, you agree to CasaQuestHub's <br />
             Privacy Policy, Terms and Conditions.
           </p>
@@ -83,7 +83,9 @@ const Signup = () => {
           >
             REGISTER NOW
           </button>
-          <p className="text-right pt-2">Already have an account? <a href="/login"> <u>Login</u></a></p>
+          <p className="text-right pt-2 text-gray-500 text-xs mb-6">Already have an account? 
+            <a href="/login"> <u>Login</u></a>
+          </p>
         </form>
 
     </div>
