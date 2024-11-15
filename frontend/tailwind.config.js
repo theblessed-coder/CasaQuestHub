@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        // 'fadeInDiag': ""
+        'fadeIn': ""
       },
 
       keyframes: {
