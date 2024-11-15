@@ -19,7 +19,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="max-w-xl mx-auto p-8 my-5 bg-white rounded shadow-lg flex flex-col">
+    <div className="max-w-xl mx-auto p-8 my-5 bg-white rounded shadow-lg flex flex-col motion-preset-slide-right">
       <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">

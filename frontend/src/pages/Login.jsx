@@ -18,7 +18,10 @@ const Login = () => {
   };
 
   return (
-    <div className="max-w-lg mx-auto my-20 bg-white rounded p-8 shadow-lg flex flex-col">
+    <div className="max-w-lg mx-auto 
+                    my-20 bg-white rounded 
+                    p-8 shadow-lg flex flex-col
+                    motion-preset-slide-right">
       <form onSubmit={handleSubmit}>
 
         <div className="mb-4">
@@ -50,7 +53,9 @@ const Login = () => {
         >
           LOGIN
         </button>
-        <p className="text-right pt-2">Don't have an account yet? <a href="/Signup"> <u>Sign up</u></a></p>
+        <p className="text-right pt-2 text-xs text-gray-500">Don't have an account yet? 
+          <a href="/Signup"> <u>Sign up</u></a>
+        </p>
       </form>
     </div>
   );

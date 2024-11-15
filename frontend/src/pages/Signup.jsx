@@ -20,10 +20,13 @@ const Signup = () => {
   };
 
   return (
-    <div className="max-w-lg mx-auto my-5 bg-white rounded p-8 shadow-lg flex flex-col">
+    <div className="max-w-lg mx-auto 
+                    my-5 bg-white rounded 
+                    p-8 shadow-lg flex flex-col
+                    motion-preset-slide-left">
    
         <form
-          className="transition duration-1000 "
+          className="transition duration-700"
           onSubmit={handleSubmit}
         >
           <div className="mb-8">
