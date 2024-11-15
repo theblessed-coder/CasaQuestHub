@@ -1,21 +1,26 @@
 import React from "react";
 import Featured from "../components/Featured";
+import NewListing from "../components/NewListing";
+import { TopAgents } from "../components/TopAgents";
 
 const Home = () => {
   return (
     <div
-      className="bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: 'url("./images/her0.jpg")' }}
+      className="bg-auto bg-no-repeat"
+      style={{ backgroundImage: 'url("./images/hero-image.jpg")' }}
     >
-      <div className="max-w-4xl font-light mx-auto py-10 flex flex-col justify-center items-center text-center bg-black bg-opacity-50 text-white">
-        <h1 className="text-3xl static mt-8 mb-8 font-medium">
+      <div className="w-full font-light 
+                      mx-auto px-10 py-12 flex flex-col justify-center 
+                      items-center text-center bg-black bg-opacity-60 text-white 
+                      transition delay-400 animate-[fade_0.7s_ease-in_backwards]">
+        <h1 className="text-3xl static mt-8 mb-2 font-medium">
           Welcome to CasaQuestHub
         </h1>
-        <p className="text-lg pr-10 pl-10">
-          Discover your dream home with us. Browse through a wide range of
-          residential, commercial, and land listings. Whether you're buying, selling,
-          or renting, we're here to help you every step of the way. Start your
-          journey with CasaQuestHub today and find the perfect place to call home.
+        <p className="text-lg py-4 max-w-4xl">
+          Browse through a wide range of residential, commercial, and land listings.
+          Whether you're buying, selling, or renting, we're here to help you 
+          every step of the way. Start your journey with CasaQuestHub today
+          and find the perfect place to call home.
         </p>
         {/*
         <div className="flex items-center mt-4 mb-4">
@@ -32,8 +37,11 @@ const Home = () => {
 
       <div className="bg-white">
         <div className="max-w-4xl mx-auto p-8">
+          <NewListing />
           <h1 className="text-2xl font-bold mb-4">Featured</h1>
+          <hr className="mb-4"/>
           <Featured />
+          <TopAgents />
         </div>
       </div>
     </div>
