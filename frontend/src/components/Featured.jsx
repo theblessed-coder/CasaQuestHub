@@ -40,7 +40,7 @@ const Featured = () => {
       {featuredListings.map((listing) => (
         <motion.div
           initial={{ opacity: 0, y: 0 }}
-          whileInView={{ opacity: 1, y: 50 }}
+          whileInView={{ opacity: 1, y: 20 }}
           viewport={{ once: true }}
           transition={{ duration: 0.9, delay: 0.3 }}
           key={listing.id} 
