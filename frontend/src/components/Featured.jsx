@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Featured = () => {
   
@@ -37,7 +38,14 @@ const Featured = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-12 motion-preset-slide-right">
       {featuredListings.map((listing) => (
-        <div key={listing.id} className="shadow p-2 hover:shadow-xl">
+        <motion.div
+          initial={{ opacity: 0, y: 0 }}
+          whileInView={{ opacity: 1, y: 50 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.9, delay: 0.3 }}
+          key={listing.id} 
+          className="shadow p-2 hover:shadow-xl"
+        >
           <img
             src={listing.imageUrl}
             alt={listing.title}
@@ -52,7 +60,7 @@ const Featured = () => {
               <Link to="/checkout">Checkout</Link>
             </button>
           </div>
-        </div>
+        </motion.div>
       ))}
 
     </div>
