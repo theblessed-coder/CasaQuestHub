@@ -32,7 +32,7 @@ export const TopAgents = () => {
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.9, delay: 0.5 }}
+        transition={{ duration: 0.9, delay: 0.3 }}
       >
         <h3 className="text-2xl font-bold mb-4">Top Agents</h3>
         <hr className="mb-4"/>
