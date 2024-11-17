@@ -63,8 +63,8 @@ Start the server
 
 ## Authors
 
-- [Peter Oluwagbemiga](https://www.github.com/Pyro19)
 - [Blessing Nwakwuo](https://www.github.com/theblessed-coder)
-- [Emmanuel Itodo](https://www.github.com/itodoemmanuel)
 - [Moses Onche](https://www.github.com/Moses-Onche)
+- [Emmanuel Itodo](https://www.github.com/itodoemmanuel)
+- [Peter Oluwagbemiga](https://www.github.com/Pyro19)
 
