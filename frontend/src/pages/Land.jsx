@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {Link} from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Land = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -117,9 +118,15 @@ const Land = () => {
         />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
         {filteredListings.map((listing) => (
-          <div key={listing.id} className="p-2 shadow hover:shadow-xl transition delay-100 motion-preset-slide-right">
+          <motion.div 
+            initial={{ opacity: 0, y: 0 }}
+            whileInView={{ opacity: 1, y: 20 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.9, delay: 0.3 }}
+            key={listing.id} className="p-2 shadow hover:shadow-xl"
+          >
             <img
               src={listing.imageUrl}
               alt={listing.title}
@@ -134,7 +141,7 @@ const Land = () => {
                 <Link to="/checkout">Checkout</Link>
               </button>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
