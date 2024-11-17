@@ -1,9 +1,16 @@
 import React from "react";
 import Reviews from "../components/Reviews";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="max-w-4xl mx-auto mt-12">
+    <motion.div
+      initial={{ opacity: 0, y: 0 }}
+      whileInView={{ opacity: 1, y: 30 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.9, delay: 0.3 }} 
+      className="max-w-4xl mx-auto"
+    >
       <h1 className="text-3xl font-bold mt-6 mb-2 px-6">About CasaQuestHub</h1>
       <hr className="mb-4 mx-6"/>
       <p className="mb-4 px-6">
@@ -20,7 +27,7 @@ const About = () => {
         ensure a seamless and safe user experience.
       </p>
       <Reviews />
-    </div>
+    </motion.div>
   );
 }
 
