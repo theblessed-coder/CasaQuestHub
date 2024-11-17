@@ -23,7 +23,7 @@ const Signup = () => {
     <div className="max-w-lg mx-auto 
                     my-5 bg-white rounded 
                     p-8 shadow-lg flex flex-col
-                    motion-preset-slide-left">
+                    ">
    
         <form
           className="transition duration-700"
@@ -82,7 +82,7 @@ const Signup = () => {
           </p>
           <button
             type="submit"
-            className="bg-yellow-500 hover:bg-slate-500 hover:text-yellow-50 transform hover:translate-y-[-5px] text-black font-semibold w-full p-2 rounded transition duration-500 ease-in-out"
+            className="bg-yellow-500 hover:bg-slate-500 hover:text-yellow-50 transform hover:translate-y-[-3px] text-black font-semibold w-full p-2 rounded transition duration-500 ease-in-out"
           >
             REGISTER NOW
           </button>
