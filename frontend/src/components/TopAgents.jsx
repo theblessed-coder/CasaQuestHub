@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from "framer-motion"
 
 export const TopAgents = () => {
 
@@ -27,12 +28,17 @@ export const TopAgents = () => {
     ]
 
     return (
-      <>
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.9, delay: 0.5 }}
+      >
         <h3 className="text-2xl font-bold mb-4">Top Agents</h3>
         <hr className="mb-4"/>
         <div className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1'>
             {topAgents.map((agent) => (
-              <div key={agent.id} className='flex sm:flex-col my-8 ml-8 items-center md:w-2/3 motion-preset-slide-left'>
+              <div key={agent.id} className='flex sm:flex-col my-8 ml-8 items-center md:w-2/3 '>
                 <img src={agent.imageUrl} alt="real estate agent" />
                 <div className='w-full sm:text-center m-6 sm:flex-col sm:justify-center'>
                   <h4 className='text-xl'>{agent.name}</h4>
@@ -42,6 +48,6 @@ export const TopAgents = () => {
               </div>
             ))}
         </div>
-      </>
+      </motion.div>
     )
 }
